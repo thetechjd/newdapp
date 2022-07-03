@@ -1,0 +1,80 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../public/fonts/Montserrat-SemiBold.ttf");
+ 
+}
+
+:root{
+  --font-family: 'Montserrat';
+  --clr-light: #f7ede2;
+  --clr-lightt: #f0e9e9;
+  --clr-purple: #9b5de5;
+  --clr-pink: #f15bb5;
+  --clr-yellow: #fee440;
+  --clr-blue: #00bbf9;
+  --clr-green: #00f5d4;
+  --clr-selection-bg: #cb3d92;
+  --clr-selection-text: #f4f0f0;
+  --clr-background: #06070a;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+  font-size: 20px;
+  /* background: var(--clr-background); */
+  color: var(--clr-selection-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-pattern {
+  background-color: #ffffff;
+  background-image: url('/images/starfield.gif');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.skewed{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* border: top right bottom left */
+  border-width: 100px 1500px 0 1500px;
+  /* transform: skewY(7deg); */
+  /* transform : skewY(-6deg); */
+  /* height: 96px; */
+  border-color: transparent #06070a;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
